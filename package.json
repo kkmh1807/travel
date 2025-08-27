@@ -1,0 +1,22 @@
+{
+  "name": "travelblog",
+  "private": true,
+  "packageManager": "pnpm@9",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "pnpm turbo run dev",
+    "build": "pnpm turbo run build",
+    "dev:web": "pnpm --filter web dev",
+    "dev:studio": "pnpm --filter studio dev",
+    "build:web": "pnpm --filter web build",
+    "build:studio": "pnpm --filter studio build"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "dependencies": {
+    "@sanity/cli": "^4.6.0"
+  }
+}
